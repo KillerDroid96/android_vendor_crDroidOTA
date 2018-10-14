@@ -23,8 +23,8 @@
                            <devicename>Oneplus 5T</devicename>
                            <filename>crDroidAndroid-9.0-20181006-dumpling-v5.0</filename>
                            <buildtype>Nightly</buildtype>
-                           <download>https://goo.gl/yDMpFj</download>
-                           <changelog>https://raw.githubusercontent.com/crdroidandroid/android_vendor_crDroidOTA/9.0/changelog_dumpling.txt</changelog>
+                           <download>https://goo.gl/piMa5s</download>
+                           <changelog>https://raw.githubusercontent.com/killerdroid96/android_vendor_crDroidOTA/9.0/changelog_dumpling.txt</changelog>
                            <gapps>https://opengapps.org/</gapps>
                            <forum>https://bit.ly/2NEm6cr</forum>
                            <firmware>https://bit.ly/2P83JcX</firmware>
