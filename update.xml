@@ -24,6 +24,11 @@
                            <filename>crDroidAndroid-9.0-20181018-dumpling-v5.0.zip</filename>
                            <buildtype>Nightly</buildtype>
                            <download>https://goo.gl/piMa5s</download>
+                           <BuildsUrl
+                                    id="builds"
+                                    title="Build Folder"
+                                    description="Download Any Build">https://goo.gl/hakfVa
+                           </BuildsUrl>
                            <changelog>https://goo.gl/tdNeiL</changelog>
                            <gapps>https://opengapps.org/</gapps>
                            <forum>https://bit.ly/2NEm6cr</forum>
