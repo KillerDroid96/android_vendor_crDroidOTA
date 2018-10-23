@@ -33,7 +33,7 @@
                            <telegram>https://t.me/joinchat/GJLqTwtxN3lBChcCPMsd1g</telegram>
                            <!-- Classic Style -->
                            <BuildsUrl
-                           id="download"
+                           id="build"
                            title="Build Folder"
                            description="View All Builds">https://goo.gl/piMa5s</BuildsUrl>
                            <SourceUrl
