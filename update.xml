@@ -31,15 +31,6 @@
                            <recovery>https://bit.ly/2wLbJZO</recovery>
                            <!-- <paypal>https://bit.ly/2GFfDHk</paypal> -->
                            <telegram>https://t.me/joinchat/GJLqTwtxN3lBChcCPMsd1g</telegram>
-                           <!-- Classic Style -->
-                           <BuildsUrl
-                           id="build"
-                           title="Build Folder"
-                           description="View All Builds">https://goo.gl/piMa5s</BuildsUrl>
-                           <SourceUrl
-                           id="source"
-                           title="Source"
-                           description="View Source Code">https://goo.gl/1Ge6fH</SourceUrl>
                   </dumpling>
          </manufacturer>
 </OTA>
