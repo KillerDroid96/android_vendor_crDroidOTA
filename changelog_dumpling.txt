@@ -1,4 +1,225 @@
 ====================
+     11-17-2018
+====================
+   * build/make/
+6642e2140 Update install graphics
+
+   * device/oneplus/msm8998-common/
+fec69f2 msm8998: Switch to 2.1 sound trigger HAL
+4c9eb60 msm8998: set partitions for loop device
+b28ada1 msm8998: Set vendor security patch level using VENDOR_SECURITY_PATCH
+2e53306 msm8998: Tweak GPS config
+
+   * device/qcom/sepolicy/
+180d80c6 common: Fix labelling of lcd-backlight
+8ae891f2 sepolicy: Allow mm-qcamerad to access v4L "name" node
+b601f6a4 sepolicy: Fix video4linux "name" node labeling
+970dc8f5 sepolicy: allow vold to read persist dirs
+20b979f0 sepolicy: qti_init_shell needs to read dir too
+1f1404d8 hal_gnss_default: Do not log udp socket failures
+8c71f42c sepolicy: rules to allow camera daemon access to app buffer
+3e424fd4 sepolicy: Label mpctl_socket as data_file_type
+d3436bd1 sepolicy: Allow system_server to 'read' qti_debugfs
+1a05dd6f sepolicy: Allow wcnss_service to set wlan.driver properties
+13db46aa Use set_prop() macro for property sets
+d24724fe qcom: Label vendor files with (vendor|system/vendor) instead of vendor
+
+   * frameworks/base/
+365090c6fc1 Add Flashlight blink on incoming calls [1/3]
+9f4f9569c5c SystemUI: Remove data tile dialog
+0d03b725ace SystemUI: Tiny expanding improvement
+a88e64c4d11 SystemUI: Adjusted animation timing
+5102905f496 Speed up StatusBar
+862fd1ddc9a Speed Up Animation & UI
+aa47d20d37a Speed up wake-and-unlock scenario
+443f3ad0b68 Factor out preference-in-storage check to overridable method.
+5e9369f1553 ViewConfiguration: Set scroll friction to 0.012
+3b1cb2da53c Clean receivers completely when forceStop the process
+806334a840e MountService: Unmount internal storage before restarting framework
+08723bfe20d Guard in short-circuit evaluations for stringSplit methods.
+73dae7593ce aapt: Default to 0 compression ratio
+da3a9cbb89d lowered animations duration
+3f29abed562 Let's cut Max Excape Animation in Half
+f3ca9e1d02a Disable statusbar time refresh when screen off
+7341b96ff34 AppOps: Do not prune apps that are not present
+7b029fdb221 SystemUI: Name Cellular Tile based on carrier
+5b95d37519b KeyStore: Check for daemon death and reconnect if needed
+6975d465162 Refusing to enter PIP mode when activity destroyed
+59b62aa08f6 Fix PIP media session listener for secondary users
+cd0e6ff6670 Fix the behavior of keyguard bouncer in a corner case
+c0753d9fc54 VrManagerService: Solve the null pointer exception
+0c3cac2905d SystemUI: Fixes context for tiles without longClick
+7481ea35ddc ActivityManager: Fix display id JE issue
+d86cab71e1b Activity: Fix class not found exception
+de7d9be7312 am: Fix top activity resume with secure keyguard
+009f2ab133c Fix app shortcuts string when changing language during first boot
+c66f22bf51f Fix NPE when creates wifi tracker after setting pin
+b58b446f408 Revert "Wifi: Check for WiFiService's existence before its access"
+a91bfe8a2b9 do not remove system when provider publish timeout
+c9886755c1f service: ResetListener in StorageManagerService
+0fc9c42bdcb system_server:process: Crash on Android user-switching
+
+   * frameworks/opt/telephony/
+889a15f61 LocaleTracker: Add null check before accessing WifiManager
+690bd7fd9 Fix signal icon is not shown
+
+   * hardware/interfaces/
+970bd556 camera: Only link and use vendor.qti.hardware.camera.device if specified
+1d8e4e67 Camed HAL extension: Added support in HIDL for Extended FD.
+d750a056 keymasterV4_0: Tags support for FBE wrapped key.
+
+   * hardware/lineage/interfaces/
+4a15305 interfaces: Add touch HIDL interface definitions
+7e00394 interfaces: Add 2.0 livedisplay interfaces
+
+   * hardware/qcom/keymaster/
+094356b keymaster: Use generated kernel headers
+4e4fcfb keymaster: move to /vendor
+8b76bc3 keymaster: Fix compiler warnings
+9d83438 keymaster: add TARGET_PROVIDES_KEYMASTER
+b026dfb keymaster: Featureize support for waiting on QSEE to start
+8429903 Keymaster: Check if keymaster TZ app is loaded
+6a29e3c keymaster: Set HEAP_MASK_COMPATIBILITY by platform for QCOM_HARDWARE
+ed4b650 Keymaster: Support for 64bit userspace and 32bit TZ
+
+   * hardware/qcom/wlan-caf/
+d01cbf3 wcnss_service: Read serial number from custom property
+d39e04a wcnss_qmi: Generate a fixed random mac address if the NV doesn't provide one
+
+   * kernel/oneplus/msm8998/
+1cae5b8da68c Merge 'oneplus/QC8998_O_8.1' into 9.0-eas
+
+   * lineage-sdk/
+cb19adf ProfileManager: Don't start before decrypted
+
+   * packages/apps/Camera2/
+5c9d15734 Use mCameraAgentNg for getting camera info when available
+
+   * packages/apps/Snap/
+ee2a3aace Snap: update shutter buttons on CaptureUI
+798df8916 Snap: Always allow 100% JPEG quality to be set
+f9f51d986 Snap: Remove ACCESS_COARSE_LOCATION permission from manifest
+3c1d9dddb Snap: Disable debugging of double open issue
+b1208d239 Snap: Add missing NULL check in updateQcfaPictureSize()
+e6943d581 Snap: Check various feature support before applying
+cdea71de7 Snap: Fix layout of zoom option
+5a9d8116e Snap: Create correct redeye reduction config icon
+30f869788 Snap: Avoid crash with empty RAW output size
+e345d0725 Fix get aePref is null in PhotoMenu
+ff78f6604 Fix to change default mode to Camera1 HAL1
+be455c203 SnapdragonCamera: Fix parameters NullPointerException
+d76c0dd99 SnapdragonCamera: SetParameters use the mParameters Object
+50bb87360 Fix force close when launch camera on P
+6caf953a6 Snap: use platform cert
+2a6a001c5 CameraSettings: Do not crash if zoom ratios are not exposed
+e830e02ad Snap: Allow quickreader to work with secure device
+58abb6b39 Snap: turn developer category title into a translatable string
+7711d4979 SnapdragonCamera: Panorama, replace border drawable
+750b6a2d0 Snap: remove unused shutter buttons
+4d5c48a58 Snap: Check for ACCESS_FINE_LOCATION instead of ACCESS_COARSE_LOCATION
+38cf9525c Snap: Configure focus ring preview dimensions
+31fbb71af Snap: Add support for focus distance
+0ddadb6db Drop new focus indicator into Camera2.
+50b600bba Snap: fix copy and paste fail
+092299faf Snap: add missing null check on isCamera2Supported
+bbdc22207 Snap: don't try to set up cameras with ids greater than MAX_NUM_CAM
+3165c34c5 Do not crash if we don't have support for RAW files
+1103242c0 Snap: Fix "Convert "save best" dialog text to a quantity string"
+df83d1ff8 Snap: Convert "save best" dialog text to a quantity string
+787aad875 Snap: adaptive icon
+7d5bcfb7a Snap: Port all string improvements from cm-14.1
+adc1686a5 Snap: Update pano and video icons to be more like photo icons
+0202b22f3 Snap: Add missing thumbnails for filter modes
+
+   * packages/apps/crDroidSettings/
+ac500426f ENable charging sounds by default
+ce16a5e9b Enable AOSP recents by default
+8ecb1beb8 Enable CRT screen off animation by default
+ea10e3067 Enable long press power for torch by default
+cb6f90bfa Enable face auto unlock by default
+f275b2728 Enable OTG in power menu by default
+18c84e4fc Enable battery bar by default
+dea8afeec Enable Clock seconds by default
+39d95a2e6 Enable QS pulldown from right by default
+a2188ef04 Enable Center clock by default
+3a51b6d3b Enable VoLTE icon by default
+af42f753b Add Flashlight blink on incoming calls [2/3]
+80a74fa80 Redirect OTA
+9c8172f9b crdroid: Fix missing swipe up on home button gesture
+2d6863059 Partial Revert "crdroid: Update gesture settings"
+
+   * packages/services/Telecomm/
+492c0e50 Telecomm: Add Flashlight blink on incoming calls [3/3]
+
+   * packages/services/Telephony/
+2b7692eb9 Don't start SIP service before decrypted
+
+   * system/bt/
+ac43e099f Increase maximum Bluetooth SBC codec bitpool and bitrate values
+
+   * system/vold/
+b5b8d6e vold: Add texfat and sdfat support
+c96b174 vold: Wrapped key support for FBE
+fc0cce8 vold: Move QCOM HW FDE inclusion under lineage namespace
+8544e3c system: vold: Remove crypto block device creation
+4bbb165 vold: Add Hardware FDE feature
+
+   * vendor/oneplus/
+891cbaea msm8998: Update ims apk
+7c360701 msm8998: Add move_widevine script
+af4eed44 msm8998: Update widevine blobs
+11109009 msm8998: Update QTI telephony
+4d229abd msm8998: Re-add oneplus ims additions
+aa812f2c msm8998: Update ims blobs
+c41f6248 msm8998: Remove oneplus ims blobs
+
+====================
+     11-16-2018
+====================
+
+
+   * device/oneplus/msm8998-common/
+8652369 msm8998: Update for new ims stack
+
+   * device/qcom/sepolicy/
+0be5ee09 Merge tag 'LA.UM.7.3.r1-06300-sdm845.0' into HEAD
+
+   * packages/apps/Snap/
+2415bd812 QuickReader: Match switch icon size and fill color with other icons
+5dc259325 Snap: add QReader to module switch
+c60b30d42 QuickReader: initial commit
+7f8b51694 Snap: check tags before using them
+6b88396e4 Snap: Rip out hdr-need-1x option
+24462dca4 Removed littlemock dependency and cleanup
+bb78c9f4e Snap: Update HDR icons
+77dfe5550 Snap: Fix panorama layout
+b80d7ec30 Snap: Arrange video menu so it's similar to photo menu
+f66285d33 Snap: Remove "help screen on first start" feature
+0950dd4a2 Snap: Fix filter mode button after disabling HDR mode
+c2e460a81 Snap: Fix swipe right to open menu
+ed7e4cf14 Snap: Don't close slide out menu after selecting scene mode
+077115090 Snap: Adjust scene and filter mode layout dimensions
+48cd4d191 Snap: Increase default pano capture pixels to 1440x1000
+8a26376c6 Snap: Disable warped pano preview
+a36601449 Snap: Show remaining photos on initial start
+407f75a09 SnapdragonCamera: Add missing toast on HSR/HFR override
+aef8a13b6 Snap: Don't do touch-to-focus on top of UI elements
+351614765 Snap: Render zoom circle in the center of the camera preview
+3c1a54c34 SnapdragonCamera: Enforce 120ms delay in between shutter clicks
+e84f26277 SnapdragonCamera: Fix shutter button clicks in rapid succession getting ignored
+e6f834710 VideoModule: don't set negative HFR value
+a474a5ef5 ListPreference: prevent ArrayIndexOutOfBoundsException
+9440019cb Protect against multiple shutter callbacks per frame in longshot mode.
+74abc0e8e SnapdragonCamera: Longshot with Burst Functionality.
+6422c2a83 Snapdragon Camera: Use consistent API for preview fps reset
+
+   * packages/apps/TvSettings/
+d2699fa7 Show Trust in security settings
+
+   * vendor/lineage/
+355d8671 Disable AOD by default [1/2]
+
+====================
      09-24-2018
 ====================
 
