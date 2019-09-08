@@ -1,0 +1,240 @@
+====================
+     09-08-2019
+====================
+
+
+   * device/oneplus/sm8150-common/
+188ed92 sm8150-common: fod: ignore vendor error code 6
+
+   * frameworks/base/
+7cf177d0cbd0 New Crowdin translations (#298)
+78526e9505ab PrintSpooler: Improve theming
+412f00e2462c Fix Google Markup FC
+593f5bbbc9f4 base: Fix crash when changing default phone app
+aafbffe8c00a DefaultPermissionGrantPolicy: grant Google sounds picker storage perms
+352db5ad8827 base: fix mediascanner access permissions to external storage
+b551afe9fb02 Add Location & Storage permission to Default Dialer App It's required for Call Recording
+bc59314ae327 Permissions: Grant Pixel's Wallpaper app access to SD
+abc3b0ac026d Fix Google dialer FC due to missing permissions
+c91a1fe98674 Allow chromium to sign in
+c7bc1e94efe2 Fix Google Calendar FC
+691a0d709ae3 Fix permissons for ContactsProvider2
+054488012a5d Fix Fi permissions
+c6aeb2e5bd6c Fix Android 7.0 GApps permisions which were causing F/C
+4f269437a13f Fix setupwizard FC
+
+   * kernel/oneplus/sm8150/
+95a5db0cc498 drivers: qcacld: fix building
+ec6b471e455d drm: msm: default to FOD dimming when calculating alpha
+f2ea7e472192 drivers: qcacld: reverse fw-provided mac addr
+
+   * packages/apps/crDroidSettings/
+a1907f12 New Crowdin translations (#471)
+
+   * vendor/addons/
+7fac4a4 addons: Update Longshot apk
+
+   * vendor/crDroidOTA/
+c6cbd8a Guacamole
+
+====================
+     09-07-2019
+====================
+
+
+   * frameworks/base/
+5febe65f80c4 Merge 'lineage-16.0' into 9.0
+
+   * packages/apps/Dialer/
+5914df90f Merge 'lineage-16.0' into 9.0
+
+   * packages/apps/LineageParts/
+5f47287 Merge 'lineage-16.0' into 9.0
+
+   * packages/apps/Snap/
+14043a64f Merge 'lineage-16.0' into 9.0
+
+   * packages/inputmethods/LatinIME/
+ca10c5cd6 Merge 'lineage-16.0' into 9.0
+
+   * vendor/lineage/
+25cf7292 Disable AudioFX on atv
+cf7b93e9 prebuilts: Remove outdated TCP init script
+b38ea68d LatinIME: Add en_GB, en_US, lt, lv, ro, sl, sr, tr dictionaries
+
+====================
+     09-06-2019
+====================
+
+
+   * packages/apps/LineageParts/
+c3e6d38 PartsActivity: Add a search button to our activities
+
+====================
+     09-05-2019
+====================
+
+
+   * frameworks/base/
+789e158c36a3 Fix NPE in SyncRtSurfaceTransactionApplier#scheduleApply
+
+   * packages/apps/Dialer/
+f3ab62bde Enable Call Recording for Sri Lanka and Costa Rica.
+
+====================
+     09-04-2019
+====================
+
+
+   * frameworks/av/
+d5628a54ba Merge 'lineage-16.0' into 9.0
+
+   * frameworks/base/
+4873edf84d22 Merge 'lineage-16.0' into 9.0
+18ca7b56c878 Revert "SystemUI: disable wallpaper-based tint for scrim"
+7f394e9bb404 New Crowdin translations (#297)
+
+   * packages/apps/AudioFX/
+383972a Allow opt-out of AudioFX
+
+   * packages/apps/Launcher3/
+4e99d1b7c New Crowdin translations (#28)
+
+   * packages/apps/crDroidSettings/
+13642553 New Crowdin translations (#470)
+
+====================
+     09-03-2019
+====================
+
+
+   * frameworks/base/
+f8d54bb75e89 SystemUI: disable wallpaper-based tint for scrim
+2db48e301548 MTP: Add support of ObjectInfoChanged Event
+7c65f70e0ade LiveDisplayTile: Remove tile if unavailable
+
+   * vendor/codeaurora/telephony/
+7de911d Revert "IMS-VT: Low battery handling for Video calls"
+
+====================
+     09-02-2019
+====================
+
+   * android/
+df457c9 manifest: Track system sepolicy
+
+   * device/lineage/sepolicy/
+7368360 Revert "sepolicy: remove set_prop for theme_prop on coredomain"
+
+   * frameworks/base/
+28e880f7f654 Theme system alert dialog
+346cb6647283 Declare CustomThemeDeviceDefaultDialogAlert
+65068670839f Fix font on language picker part
+34e68657a032 Separate custom fonts from material theme [2/2]
+1b16820e7be4 Use headline font in preference title
+2e7d4a2701a4 Expose custom_accent_color and TextAppearanceTitle
+a19ddaa84e5b Use headline font on battery percentage
+c770165ced00 systemui: use headline font for carrier label
+f4a4af8e64c3 Better QS detail clip animation
+cab01ed79589 BatteryMeterDrawableBase: Don't colorize when level critical
+2013ec661454 FontTile: Show text below font name
+beb312db885d Introduce FontTile
+ae7ab2c2ddc3 Allow QS detail view to scroll
+e8914f2b1c6b FontService: Support fonts from Substratum theme packages
+d13b7ac8f6fb FontService: Don't copy resources from /system/etc/fonts
+c3b2cee165a6 pocket: Fix pocket lock view for display cutouts
+b147c3afafdb pocket: Add hardware acceleration and properly maintain SYSTEM_UI flags
+edaa17b14dcd PocketService: Adjust light sensor rate to 400ms
+e0faddf279cd pocket: Don't show immersive mode confirmation when UI showing
+8147dd6c7eed pocket: Reduce sleep timeout for pocket lock
+d53a85094e2a Pocket lock improvements
+5476ce142490 pocket: Adjust sleep timeout for pocket lock view to 10 secs
+0692790a8a81 Revert "Use Class.forName instead of ClassLoader.loadClass"
+bbbf24d97329 Revert "LayoutInflater: Special case well-known View constructors"
+9c5f01ae4905 Merge 'lineage-16.0' into 9.0
+9862591754db fw/b: Use common network restrict apps method
+
+   * packages/apps/Settings/
+d05a15685d Settings: Change fonts
+
+   * packages/apps/crDroidSettings/
+ce7dafd5 crdroid: Clean up for font frag
+
+   * system/sepolicy/
+58383993 Allow system server to set props
+
+   * vendor/addons/
+5401629 Fix actionbar font
+8102dfa Separate custom fonts from material theme [1/2]
+c0f497b Fix system error dialog
+9b88282 Restrict dialog theming to system apps
+
+   * vendor/lineage/
+54a44244 kernel: Add TARGET_KERNEL_ADDITIONAL_FLAGS to allow setting extra cflags
+
+====================
+     09-01-2019
+====================
+
+   * android/
+59cb3ce manifest: Track Recorder
+643b794 Merge 'lineage-16.0' into 9.0
+
+   * device/oneplus/sm8150-common/
+af1b3b7 sm8150-common: sepolicy: allow system_server sysfs_battery_supply read/open
+
+   * frameworks/av/
+81db60efad MTP: Add support of ObjectInfoChanged Event
+
+   * frameworks/base/
+f7526d5b82ee New Crowdin translations (#295)
+
+   * frameworks/opt/telephony/
+864cd8346 Merge 'lineage-16.0' into 9.0
+
+   * packages/apps/Recorder/
+eb33bb9 Recorder: Tile: Use MD2 icon
+8a1f2f3 Recorder: Tile: send broadcast for close all dialogs after click
+167da98 Recorder: Introduce QS Tile
+dc528b6 Recorder: Grant CAPTURE_AUDIO_OUTPUT permission
+
+   * packages/apps/Settings/
+33a89129b0 Settings: Use seekbar to allow setting arbitrary animation values
+
+   * packages/apps/crDroidSettings/
+3ee96ba8 Add attr for interval seekbar
+
+   * vendor/lineage/
+158fa0a2 recorder: grant CAPTURE_AUDIO_OUTPUT permission
+31590d43 overlay: Disable config_keyguardUserSwitcher on sw600dp
+467aff89 crdroid: atv: Inherit atv device tree
+
+====================
+     08-31-2019
+====================
+
+
+   * system/netd/
+09e8f9d netd: Consolidate restrict apps methods
+
+====================
+     08-30-2019
+====================
+
+
+   * device/oneplus/guacamole/
+35c0339 Automatic translation import
+
+   * device/oneplus/sm8150-common/
+c7c58d5 sm8150-common: KeyHandler: reduce log spam
+99251a3 init.qcom.rc: remove critical flag from dashd
+
+   * frameworks/base/
+ec8f960e6391 Allow override of DUN settings
+
+   * packages/apps/Launcher3/
+bf6ccaac4 New Crowdin translations (#27)
+
+   * packages/apps/crDroidSettings/
+1d27975c New Crowdin translations (#469)
+
