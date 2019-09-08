@@ -32,5 +32,18 @@
                            <!-- <paypal>https://bit.ly/2GFfDHk</paypal> -->
                            <telegram>https://t.me/joinchat/GJLqTwtxN3lBChcCPMsd1g</telegram>
                   </dumpling>
+
+                  <guacamole>
+                           <maintainer>Matt Keller (KillerDroid96)</maintainer>
+                           <devicename>Oneplus 7 PRO</devicename>
+                           <filename>crDroidAndroid-9.0-20190908-guacamole-v5.7</filename>
+                           <buildtype>Weekly</buildtype>
+                           <download>https://bit.ly/2kAgu6b</download>
+                           <changelog>https://raw.githubusercontent.com/KillerDroid96/android_vendor_crDroidOTA/9.0/changelog_guacamole.txt</changelog>
+                           <gapps>https://opengapps.org/</gapps>
+                           <forum>https://forum.xda-developers.com/oneplus-7-pro/development/crdroid-v5-t3960580</forum>
+                           <recovery>https://bit.ly/2L3bxMy</recovery>
+                           <telegram>https://t.me/crDroidOP7Pro</telegram>
+               </guacamole>
          </manufacturer>
 </OTA>
